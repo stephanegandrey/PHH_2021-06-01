@@ -56,7 +56,7 @@
     </nav>
 <div id="form_produit">
     
-    <form action="traitement-formulaire" method="POST" role="form">
+    <form action="traitement-formulaire.php" method="POST" role="form">
         <legend>Edition produit</legend>
     
         <div class="form-group">
