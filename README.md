@@ -23,6 +23,8 @@ dans vscode installer
 	Auto Close Tag
 	PHP Constructor
 	PHP Extension Pack
+	PHPDoc Generator (ctrl + entree sur fontion pour générer)
+
 
 Pour créer un site, dans wamp, apache, ajouter l'alias. Nommer puis donner le chemin. "remplacer les \ par / et terminer par /"
 
