@@ -15,7 +15,7 @@ dans vscode installer
 	HTML Snippets
 	Format HTML in PHP
 	PHP Debug
-	phpfmt - PHP formatter
+	PHP Formatter
 	Bootstrap 3 Snippets
 	PHP Getters & Setters
 	PHP IntelliSense
@@ -96,5 +96,20 @@ fonction connexion, execution et affichage resultat requete
 	selectTable("Select * from produits")
 	?>
 
-
+dispatcher recup get
+	if(isset($_GET["page"])){
+        switch ($_GET["page"]) {
+            case 'edit':
+                include('includes/formproduit.php');
+                break;
+            case 'liste_produit':
+                include('includes/liste_produit.php');
+                break;
+            default:
+                include('includes/home.php');
+                break;
+        }
+    }else{
+        include('includes/home.php');
+    }
 

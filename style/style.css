@@ -1,0 +1,22 @@
+body{
+    color: green;
+}
+.produit>div{
+    display: inline-block;
+}
+.produit .left img{
+    width: 300px;
+    max-height: 400px;
+}
+.item_produit{
+    width: 100%;
+}
+
+
+.item_produit td img{
+    width: 70px;
+    max-height: 50px;
+}
+.item_produit button{
+    width:100%;
+}
