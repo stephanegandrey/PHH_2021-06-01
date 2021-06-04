@@ -2,6 +2,7 @@
     if(isset($_GET["page"])){
         switch ($_GET["page"]) {
             case 'saveproduit':
+                include('includes/upload.php');
                 if(
                     isset($_POST["titre-produit"])
                     && isset($_POST["cat-produit"])

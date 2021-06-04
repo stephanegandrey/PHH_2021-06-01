@@ -73,12 +73,7 @@ function insertSqlProduit($titre,$ref,$prix,$description,$idcat,$photo=null){
 
 function updateSqlProduit($titre,$ref,$prix,$description,$idcat,$photo=null){
     $req="UPDATE `produits` SET `titre`='".$titre."',`ref`='".$ref."',`prix`=".$prix.",`description`='".$description."',`idcat`=".$idcat." WHERE idpr=".$_GET["idp"].";";
-    $isaffected=selectTable($req);
-    // if($isaffected){
-    //     // return mysqli_insert_id ($GLOBALS["maDb"]);
-    //     return $_GET["idp"];
-    // }else{
-    //     return false;
-    // }
+    return selectTable($req);
+    
 }
 ?>

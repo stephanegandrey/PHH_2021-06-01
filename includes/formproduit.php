@@ -14,7 +14,7 @@
 ?>
 
 
-    <form action="<?=$constitutionurl?>" method="POST" role="form" name=form_ajout>
+    <form action="<?=$constitutionurl?>" method="POST" role="form" enctype="multipart/form-data">
         <legend><?=$titre?></legend>
     
         <div class="form-group">
