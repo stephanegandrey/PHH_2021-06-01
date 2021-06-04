@@ -1,9 +1,22 @@
 <?php
     if(isset($_GET["page"])){
         switch ($_GET["page"]) {
+            case 'saveproduit':
+                if(
+                    isset($_POST["titre-produit"])
+                    && isset($_POST["cat-produit"])
+                    && isset($_GET["idp"])
+                ){
+                    $idp=updateSqlProduit($_POST["titre-produit"],$_POST["ref-produit"],$_POST["prix-produit"],$_POST["description-produit"],$_POST["cat-produit"]);
+
+                }elseif(
+                    isset($_POST["titre-produit"])
+                    && isset($_POST["cat-produit"])
+                ){
+                    $idp=insertSqlProduit($_POST["titre-produit"],$_POST["ref-produit"],$_POST["prix-produit"],$_POST["description-produit"],$_POST["cat-produit"]);
+                    $_GET["idp"]=$idp;
+                }
             case 'new':
-                include('includes/formproduit.php');
-            break;
             case 'edit':
                 include('includes/formproduit.php');
             break;

@@ -20,8 +20,10 @@
 <body>
 
 <?php 
-    include('includes/navbar.php');
-    include('dispatch.php');
+    include_once('sqlfunctions.php');
+    include_once('includes/navbar.php');
+    include_once('dispatch.php');
+    
 ?>
 <script>
         document.querySelector("nav form input[name=search]")
